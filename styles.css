@@ -22,7 +22,14 @@ body{
     background-color: var(--bg_color_2);
     display:flex;
     justify-content: space-between;
+    align-items: center;
     position:fixed;
+}
+
+.container img{
+    filter: invert(100%);
+    margin:10px;
+    border: 2px solid red;
 }
 
 .container>:nth-child(1){
@@ -117,9 +124,11 @@ body{
 }
 
 #contacts>div>p{
-    padding: 20px 0;
-    font-weight: 400;
-    font-size: 40px;
+    padding: 40px 0;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
 }
 
 #contacts .link-container{
@@ -147,6 +156,7 @@ footer{
     width:100%;
     display: flex;
     justify-content: flex-end;
+    background-color: var(--bg_color_2);
 }
 
 footer a{
@@ -154,5 +164,6 @@ footer a{
     font-size: 20px;
     font-weight: 300;
     color: var(--font_color);
-    padding: 0 20px 20px 0;
+    padding: 20px 20px 20px 0;
+    
 }
