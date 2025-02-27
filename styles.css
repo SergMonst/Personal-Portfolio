@@ -1,0 +1,158 @@
+:root{
+    --bg_color_1: #222831;
+    --bg_color_2: #31363F;
+    --bg_color_3: #76ABAE;
+    --font_color: #EEEEEE;
+    --main_font: "IBM Plex Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--main_font);
+    color: var(--font_color);
+    background-color: var(--bg_color_1);
+}
+
+.container{
+    width: 100%;
+    background-color: var(--bg_color_2);
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+}
+
+.container>:nth-child(1){
+    padding-left: 20px;
+    width: 50px;
+}
+
+.container>:nth-child(2){
+    padding-left:150px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content:end;
+}
+
+#navbar ul li{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--font_color);
+}
+
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+#welcome-section h1{
+    font-size: 4rem;
+    
+}
+
+#welcome-section h2{
+    font-size: 2rem;
+    font-style: italic; 
+    font-weight: 200; 
+    color: var(--bg_color_3); 
+}
+
+#projects{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+#projects h2{
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.tile-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-tile{
+    width: 300px;
+    height: 350px; 
+    background-color: var(--bg_color_2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile h3{
+    padding: 20px 0;
+}
+
+#contacts{
+    height:100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+#contacts>div>p{
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#contacts .link-container{
+    width: 100%
+
+}
+
+.link-container ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-container li{
+    list-style: none;
+}
+
+.link-container a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--font_color);
+}
+
+footer{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--font_color);
+    padding: 0 20px 20px 0;
+}
