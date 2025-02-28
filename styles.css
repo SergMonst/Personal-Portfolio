@@ -54,7 +54,10 @@ body{
 #navbar ul li{
     box-sizing: border-box;
     padding: 10px 20px;
+    margin-right: 10px;
     list-style: none;
+    border: 2px solid transparent; 
+    border-radius:10px 
 }
 
 #navbar ul li a{
@@ -64,7 +67,6 @@ body{
 }
 
 #welcome-section{
-    width: 100vw;
     height: 100vh;
     display:flex;
     flex-direction: column;
@@ -196,6 +198,8 @@ footer a{
     margin: 0 20px;
     right:50px;
     opacity: 0.5;
+    border: 2px solid transparent;
+    
 }
 
 .button-to-top a{
@@ -272,4 +276,24 @@ footer a{
         position:relative;
         left:-40px;
     }
+}
+
+#navbar ul li:hover{
+    /*background-color: var(--bg_color_3);*/
+    border-color: var(--bg_color_3);
+    transition: background-color 0.3s;
+}
+
+#navbar ul li:active{
+    background-color: var(--bg_color_3);
+    transition: background-color 0.3s;
+}
+
+.button-to-top:hover{
+    border-color: var(--bg_color_1);
+    transition: border-color 0.5s;
+}
+
+.button-to-top:active{
+    opacity:1;
 }
