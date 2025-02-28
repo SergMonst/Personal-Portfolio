@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--main_font);
     color: var(--font_color);
@@ -39,6 +43,10 @@ body{
 
 .container>:nth-child(2){
     padding-left:150px;
+}
+
+#navbar{
+    margin-right: 20px;;
 }
 
 #navbar ul{
@@ -119,6 +127,7 @@ body{
 .project-tile a{
     height: 100%;
     width: 100%;
+    text-decoration: none;
 }
 
 .project-tile img{
@@ -129,7 +138,7 @@ body{
 }
 
 #contacts{
-    height:100vh;
+    height:80vh;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -178,6 +187,28 @@ footer a{
     font-size: 20px;
     font-weight: 300;
     color: var(--font_color);
-    padding: 20px 20px 20px 0;
+    padding: 20px 40px 20px 0;
+    
+}
+
+.button-to-top{
+    position: absolute;
+    background-color: var(--bg_color_3);
+    padding: 5px 20px;
+    border-radius: 10%;
+    margin: 0 20px;
+    right:50px;
+    opacity: 0.5;
+}
+
+.button-to-top a{
+    text-decoration: none;
+    font-family: var(--main_font);
+    font-weight: 400;
+    font-size: larger;
+    color:var(--font_color);
+}
+
+@media screen {
     
 }
